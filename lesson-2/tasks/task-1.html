@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <h1>Задача 1</h1>
+    <p>
+        Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+    </p>
+    <script>
+        //1.Вводимо необхідні дані
+        let a = parseFloat(prompt('Введіть дійсне число a', '0'))
+        let b = parseFloat(prompt('Введіть дійсне число b', '0'))
+        //2.Робимо обчислення
+        let sum = a + b
+        let multipliedNumbers = a * b
+        let fraction = a / b
+        // 3.Виводимо дані
+        document.write(`
+        Дійсне число a = ${a} <br>
+        Дійсне число b = ${b} 
+        <table border="1px">
+			<tr>
+				<th>Дія</th>
+				<th>Результат</th>
+			</tr>
+			<tr>
+				<th>Сума a+b</th>
+				<td>${sum.toFixed(2)}</td>
+			</tr>		
+			<tr>
+				<th>Добуток a*b</th>
+				<td>${multipliedNumbers.toFixed(2)}</td>
+			</tr>		
+			<tr>
+				<th>Частка a/b</th>
+				<td>${fraction.toFixed(2)}</td>
+			</tr>		
+		</table>
+        `)
+    </script>
+</body>
+</html>

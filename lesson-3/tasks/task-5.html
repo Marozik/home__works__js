@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <h1>Задача 5</h1>
+    <p>
+        З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+    </p>
+    <script>
+        //1.Вводимо необхідні дані
+        const drivingLicenceA = 'A'
+        const drivingLicenceB = 'B'
+        const drivingLicenceC = 'C'
+        let userDrivingLicence = prompt('Введіть назву категрії водія. Наприклад: A, B, C', 'A')
+        //2.Робимо порівняння та виводимо результат
+        if (userDrivingLicence.toUpperCase() === drivingLicenceA )
+            document.write(`Ви можете керувати мотоциклами та мотоциклами з коляскою об’ємом двигуна від 50 куб.`)
+        else if (userDrivingLicence.toUpperCase() === drivingLicenceB )
+            document.write(`Ви можете керувати легковими автомобілями, дозволена максимальна маса яких не перевищує 3.5 тонн.`)
+        else if (userDrivingLicence.toUpperCase() === drivingLicenceC )
+            document.write(`Ви можете керувати вантажними автомобілями загальною масою від 7.5 тонн.`)
+        else document.write(`Вказано некоректрно назву категорії`)
+    </script>
+</body>
+</html>

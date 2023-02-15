@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <h1>Задача 3</h1>
+    <p>
+        Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+    </p>
+    <script>
+        //1.Вводимо необхідні дані
+        const minNumber = 1
+        const maxNumber = 5
+        let randomNumber = minNumber + Math.floor(Math.random()*(maxNumber - minNumber + 1))
+        let userNumber1 = parseInt(prompt('Відгадайте рандомне число від 1 до 5, спороба 1/2', '1'))
+        let userNumber2 = parseInt(prompt('Відгадайте рандомне число від 1 до 5, спороба 2/2', '1'))
+        //2.Робимо порівняння та виводимо результат
+        if (userNumber1 === randomNumber || userNumber2 === randomNumber)
+            document.write(`Вітаємо Ви відгадали <br> рандомне число = ${randomNumber}`)
+        else document.write(`Нажаль Ви не відгадали, наступного разу пощастить <br> рандомне число = ${randomNumber}`)
+    </script>
+</body>
+</html>

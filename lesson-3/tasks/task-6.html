@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <h1>Задача 6</h1>
+    <p>
+        З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
+    </p>
+    <script>
+        //1.Вводимо необхідні дані
+        const monday = 'Понеділок'
+        const tuersday = 'Вівторок'
+        const wednesday = 'Середа'
+        const thuersday = 'Четвер'
+        const friday = 'П\'ятниця'
+        const saturday = 'Субота'
+        const sunday = 'Неділя'
+        let numberOfDay = parseInt(prompt('Введіть номер дня тижня -', '1'))
+        //2.Робимо порівняння та виводимо результат
+        if (numberOfDay === 1)
+            document.write(`${monday}`)
+        else if (numberOfDay === 2)
+            document.write(`${tuersday}`)
+        else if (numberOfDay === 3)
+            document.write(`${wednesday}`)
+        else if (numberOfDay === 4)
+            document.write(`${thuersday}`)
+        else if (numberOfDay === 5)
+            document.write(`${friday}`)
+        else if (numberOfDay === 6)
+            document.write(`${saturday}`)
+        else if (numberOfDay === 7)
+            document.write(`${sunday}`)
+        else document.write(`Такого дня не існує`)
+    </script>
+</body>
+</html>
